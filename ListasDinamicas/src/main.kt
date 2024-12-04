@@ -1,9 +1,7 @@
-fun main() {
-    lista: Listavel = ListaDinamica()
-    lista.inserir(5, 0)
-    lista.inserir(6, 0)
-    lista.inserir(7,1)
-    lista.inserir(10,0)
-    lista.inserir(8,3)
-
+fun main (){
+    var pilha: Empilhavel = PilhaDinamica(8)
+    pilha.empilhar("Instituto")
+    pilha.empilhar("Federal")
+    println(pilha.imprimir()) // Vai imprimir o conteúdo da pilha
+    println(pilha.espiar())
 }
